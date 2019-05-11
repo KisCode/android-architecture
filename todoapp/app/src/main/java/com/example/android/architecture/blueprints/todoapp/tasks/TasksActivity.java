@@ -73,7 +73,9 @@ public class TasksActivity extends AppCompatActivity {
         }
 
         // Create the presenter
-        //将presenter和taskFragment进行绑定
+        //将presenter和taskFragment进行绑定,Presenter中同时持有 Model和 View
+        //1. TasksRepository 是通过依赖注入，用于访问数据库 及 Modle 层
+        //2. tasksFragment，是TasksContract.View的实现类，即view实例
         mTasksPresenter = new TasksPresenter(
                 Injection.provideTasksRepository(getApplicationContext()), tasksFragment);
 
