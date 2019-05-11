@@ -73,6 +73,7 @@ public class TasksActivity extends AppCompatActivity {
         }
 
         // Create the presenter
+        //将presenter和taskFragment进行绑定
         mTasksPresenter = new TasksPresenter(
                 Injection.provideTasksRepository(getApplicationContext()), tasksFragment);
 
