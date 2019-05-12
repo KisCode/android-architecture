@@ -26,6 +26,7 @@ import java.util.List;
 
 /**
  * This specifies the contract between the view and the presenter.
+ * 官方的实现中加入了契约类来统一管理view与presenter的所有的接口，这种方式使得view与presenter中有哪些功能，一目了然，维护起来也方便，同时使得view与presenter一一对应，并有效地减少类的数目
  */
 public interface TasksContract {
 
