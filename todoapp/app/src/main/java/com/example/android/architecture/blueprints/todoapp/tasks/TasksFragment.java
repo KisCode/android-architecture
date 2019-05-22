@@ -77,7 +77,6 @@ public class TasksFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mTasksFragBinding = TasksFragBinding.inflate(inflater, container, false);
-
         mTasksFragBinding.setView(this);
 
         mTasksFragBinding.setViewmodel(mTasksViewModel);

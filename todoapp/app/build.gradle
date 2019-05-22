@@ -61,6 +61,7 @@ android {
     }
 
     dataBinding {
+        //开启dataBinding开关
         enabled = true
     }
 }

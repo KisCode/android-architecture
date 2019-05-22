@@ -16,6 +16,7 @@
 
 package com.example.android.architecture.blueprints.todoapp.addedittask;
 
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
@@ -71,7 +72,6 @@ public class AddEditTaskActivity extends AppCompatActivity implements AddEditTas
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
-
         AddEditTaskFragment addEditTaskFragment = findOrCreateViewFragment();
 
         mViewModel = findOrCreateViewModel();
